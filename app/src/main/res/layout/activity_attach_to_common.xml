@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="gone"
+        android:minHeight="?attr/actionBarSize" />
+
+    <include layout="@layout/radio_group"></include>
+
+
+
+
+    <Button
+        android:id="@+id/mbtn"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_name"
+        android:visibility="gone"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

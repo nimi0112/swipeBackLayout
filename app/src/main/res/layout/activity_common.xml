@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tutor.feel_better.swipetry.library.SwipeBackLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeBackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:directionMode="bottom"
+    app:maskAlpha="125"
+    app:swipeBackFactor="0.5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+<include layout="@layout/activity_attach_to_common">/</include>
+        <FrameLayout
+            android:id="@+id/my_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/swipe_button"
+            android:text="@string/app_name"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</com.tutor.feel_better.swipetry.library.SwipeBackLayout>
